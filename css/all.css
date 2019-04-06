@@ -117,6 +117,7 @@ a {
 
 .drop {
 	margin-right: 25px;
+	/*transition: all 0.5s;*/
 }
 .drop-wrap {
 	display: none;
@@ -125,9 +126,11 @@ a {
 	left: 50%;
 	width: 200px;
 	background-color: var(--main-color);
+	box-shadow: 0px 10px 45px -10px #3566a9
 }
 .nav .drop:hover .drop-wrap {
 	display: block;
+	transition: all 0.5s;
 }
 .drop-wrap a {
 	font-weight: 400;
@@ -147,6 +150,7 @@ a {
 .drop-hold li:hover {
 	background-color: #fff;
 	box-shadow: 0px 0px 10px -2px #3566a9;
+	transition: all 0.5s;
 }
 .drop-hold li:hover a{
 	color: var(--main-color);
