@@ -28,7 +28,7 @@ body {
 
 }
 h1 {
-	width: 1100px;
+	max-width: 1100px;
 	text-transform: uppercase;
 	font-size: 48px;
 	line-height: 70px;
@@ -56,7 +56,7 @@ h2 {
 	background: #142b55;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 0;
+	margin: 0;
 	
 }
 .main {
@@ -99,16 +99,13 @@ a {
 	color: #fff;
 	padding: 20px 40px;
 }
-.nav {
-	position: relative;
-}
-.nav>li {
+.nav a {
 	margin: 15px 5px;
 	padding: 15px 0px;
 	border-bottom: 1px inset #3566a9;
-}
-.nav a {
+	display: block;
 	color: var(--main-color);
+
 }
 .nav a:hover {
 	color: #3566a9;
@@ -116,10 +113,12 @@ a {
 /*start dropbox*/
 
 .drop {
+	position: relative;
 	margin-right: 25px;
 	/*transition: all 0.5s;*/
 }
 .drop-wrap {
+	z-index: 99;
 	display: none;
 	position: absolute;
 	top: 0;
@@ -141,11 +140,12 @@ a {
 	list-style: none;
 	padding: 0;
 }
-.drop-hold li {
-	padding: 10px 35px;
-}
 .drop-hold li a {
+	padding: 5px;
 	color: #fff;
+	border: none;
+	text-align: center;
+	
 }
 .drop-hold li:hover {
 	background-color: #fff;
@@ -194,4 +194,45 @@ a {
 	color: #fff;
 	font-size: 14px;
 	z-index: 10;
+}
+
+
+/*_____________*/
+@media (max-width: 768px) {
+	.banner {
+		flex-direction: column;
+	}
+	.logo {
+		margin: 0;
+	}
+	.sidebar { 
+		/*display: none;*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+	}
+	.content, .main {
+		width: 100%;
+		padding: 2px;
+		background: #fff;
+	}
+	.title, .contacts {
+		text-align: center;
+		
+	}
+	.categories {
+		background: #fff;
+		padding: 15px;
+		margin: 0;
+	}
+	.drop {
+		margin: 0;
+	}
+	.drop-wrap {
+		top: 0;
+		left: 45%;
+		width: 60%;
+	}
 }
