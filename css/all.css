@@ -45,7 +45,7 @@ h1 {
 	margin: -195px auto 0;
 	padding: 40px;
 	color: #898989;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 31px;
 }
 h2 {
@@ -53,11 +53,10 @@ h2 {
 	line-height: 52px;
 	letter-spacing: 0.06em;
 	color: #fff;
-	background: #142b55;
+	background-color: var(--main-color);
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
-	
 }
 .main {
 	width: 65%;
@@ -93,6 +92,9 @@ a {
 }
 .categories{
 	padding: 20px 25px;
+}
+.contacts {
+	padding: 20px 10px;
 }
 .title {
 	background-color: var(--main-color);
@@ -158,25 +160,31 @@ a {
 
 /*end dropbox*/
 /*start main block*/
+h3 {
+	margin-top: 55px;
+	padding: 5px;
+	border-top: 1px inset #ff0248;
+}
 .description {
 	margin: 15px 0;
 	padding: 0 25px;
-	line-height: 28px;
+	line-height: 25px;
+	font-size: 16px;
 }
 .screen {
 	display: block;
 	margin: 20px auto;
-	width: 70%;
+	width: 100%;
 }
 .btn {
 	display: inline-block;
-	width: 155px;
+	width: 200px;
 	text-align: center;
-	margin: 60px 25px 30px;
+	margin: 15px 25px;
 	padding: 5px 10px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #fff;
+	color: var(--main-color);
 	font-weight: bold;
 	border: 2px inset #ff0248;
 	background: none;
@@ -189,10 +197,11 @@ a {
 	padding: 5px;
 	width: 100%;
 	min-height: 100px;
-	border: 2px inset #ff0248;
-	background-color: #afe2f5;
-	color: #fff;
-	font-size: 14px;
+	border: 1px inset #ff0248;
+	background-color: var(--main-color);
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
 	z-index: 10;
 }
 

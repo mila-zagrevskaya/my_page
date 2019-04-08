@@ -3,62 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My page</title>
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+	<script src = "../js/main.js"></script>
+	<script src = "../js/index21.js"></script>
+	<script src = "../js/index22.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="banner">
-		<div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
-			<h1>Java Script</h1>
+			<div class="logo"><a href="#"><img src="../images/logo.png" alt="logo"></a></div>
+			<h1>My page</h1>
 		</div>
 		<div class="content">
 			<div class="sidebar">
+				<h2 class="sidebar_top title">menu</h2>
 				<div class="panel">
-					<div class = "title">menu</div>
-					<div class="categories">
-						<ul class="nav">
-							<li class = "drop"><a href="#">Java Script <span class = "icon-angle-right"></span></a>
-								<div class="drop-wrap">
-									<ul class="drop-hold">
-										<li><a href="#">Homework 1</a></li>
-										<li><a href="#">Homework 2</a></li>
-										<li><a href="#">Homework 3</a></li>
-										<li><a href="#">Homework 4</a></li>
-										<li><a href="#">Homework 5</a></li>
-										<li><a href="#">Homework 6</a></li>
-										<li><a href="#">Homework 7</a></li>
-										<li><a href="#">Homework 8</a></li>
-										<li><a href="#">Homework 9</a></li>
-										<li><a href="#">Homework 10</a></li>
-										<li><a href="#">Homework 11</a></li>
-										<li><a href="#">Homework 12</a></li>
-										<li><a href="#">Homework 13</a></li>
-										<li><a href="#">Homework 14</a></li>
-										<li><a href="#">Homework 15</a></li>
-										<li><a href="#">Homework 16</a></li>
-										<li><a href="#">Homework 17</a></li>
-									</ul>
-								</div>
-							</li>
-							<li class = "drop"><a href="#">MarkUp <span class = "icon-angle-right"></span></a>
-								<div class="drop-wrap">
-									<ul class="drop-hold">
-										<li><a href="#">work 1</a></li>
-										<li><a href="#">work 2</a></li>
-										<li><a href="#">work 3</a></li>
-										<li><a href="#">work 4</a></li>
-										<li><a href="#">work 5</a></li>
-									</ul>
-								</div>		
-							</li>
-						</ul>
-					</div>
+					<ul class=" categories nav">
+						<li class = "drop"><a href="#">Java Script <span class = "icon-angle-right"></span></a>
+							<div class="drop-wrap">
+								<ul class="drop-hold">
+									<li><a href="index1.html">Homework 1</a></li>
+									<li><a href="index2.html">Homework 2</a></li>
+									<li><a href="index3.html">Homework 3</a></li>
+									<li><a href="index4.html">Homework 4</a></li>
+									<li><a href="index5.html">Homework 5</a></li>
+									<li><a href="index6.html">Homework 6</a></li>
+									<li><a href="index7.html">Homework 7</a></li>
+									<li><a href="index8.html">Homework 8</a></li>
+									<li><a href="index9.html">Homework 9</a></li>
+									<li><a href="#">Homework 10</a></li>
+									<li><a href="#">Homework 11</a></li>
+									<li><a href="#">Homework 12</a></li>
+									<li><a href="#">Homework 13</a></li>
+									<li><a href="#">Homework 14</a></li>
+									<li><a href="#">Homework 15</a></li>
+									<li><a href="#">Homework 16</a></li>
+									<li><a href="#">Homework 17</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class = "drop"><a href="#">MarkUp <span class = "icon-angle-right"></span></a>
+							<div class="drop-wrap">
+								<ul class="drop-hold">
+									<li><a href="#">work 1</a></li>
+									<li><a href="#">work 2</a></li>
+									<li><a href="#">work 3</a></li>
+									<li><a href="#">work 4</a></li>
+									<li><a href="#">work 5</a></li>
+								</ul>
+							</div>		
+						</li>
+					</ul>
 					<div class = "title">Contacts</div>
 					<div class="categories contacts">
 						<a href="#" ><span class = "icon-envelope-o"></span></a>
@@ -72,10 +73,39 @@
 				
 			</div>
 			<div class="main">
-				<h2>FEA-12 </h2>
-				
+				<h2>homework 2</h2>
+				<div class="first, exercise">
+					<h3>Exercise 1</h3>
+					<p class = 'description'>Создайте пустой массив letters <br> Создайте строку из нескольких слов, например "Backend As A Service" <br> Напилите код, который разбивает эту строку на массив слов и пушит в массив letters первый символ каждого слова <br> Выведите результат в консоль <br> Объедините все элементы массива letters в одну строку и выведите ее в консоль
+					</p>
+					<div class="result1"></div>
+					<button name = "btn" class="btn" onclick = "exercise1()"> Show result </button>
+				</div>
+
+				<div class="second, exercise">
+					<h3>Exercise 2</h3>
+					<p class = 'description'>Объявите функцию с одним формальным параметром, которая проверяет тип данных переданного аргумента и: <br>если это число, возвращает текущую дату в формате "20.02.2019, 13:21:51" <br> в противном случае возвращает строку "Неверный тип данных" <br>Вызовите функцию	
+					</p>
+					<div class="result2"></div>
+					<button name = "btn" class="btn" onclick = "exercise2()"> Show result 1 </button>
+					<button name = "btn" class="btn" onclick = "exercise21()"> Show result 2</button>
+				</div>
+				<div class="fourth, exercise">
+					<h3>Exercise 3</h3>
+					<p class = 'description'>Откройте Chrome DevTools <br>В панели навигации найдите файл index01.js ( в папке js/ ) <br> Установите breakpoint на строке вызова функции insertUserText ( строка 10 ) <br> Перезагрузите страницу <br> Теперь обратите внимание на функцию testUserText <br>Ваша задача: обезопасить свою страницу от внедрения вредоносного кода с помощью функции валидации testUserText <br> функция должна вывести на страницу текст пользователя безопасным способом <br> ( т.е. текст должен быть выведен "as is" ( как есть ), но код не должен быть выполнен )
+					</p>
+					<img src="../images/xss-attack.png" alt="scheme" class = "screen">
+					<!-- <div class="result3"></div>
+					<button name = "btn" class="btn" onclick = "exercise3()"> Show result </button> -->
+				</div>
 			</div>
 		</div>
 	</div>
+	<script src = "../js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
