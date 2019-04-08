@@ -203,10 +203,12 @@ a {
 		flex-direction: column;
 	}
 	.logo {
-		margin: 0;
+		margin: 100px 0 10px;
+	}
+	.panel {
+		display: none;
 	}
 	.sidebar { 
-		/*display: none;*/
 		position: absolute;
 		top: 0;
 		left: 0;
