@@ -17,7 +17,7 @@
 <body>
 	<div class="wrapper">
 		<div class="banner">
-			<div class="logo"><a href="#"><img src="../images/logo.png" alt="logo"></a></div>
+			<div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
 			<h1>My page</h1>
 		</div>
 		<div class="content">
@@ -87,9 +87,10 @@
 					<p class = 'description'>Объявите функцию с одним формальным параметром, которая проверяет тип данных переданного аргумента и: <br>если это число, возвращает текущую дату в формате "20.02.2019, 13:21:51" <br> в противном случае возвращает строку "Неверный тип данных" <br>Вызовите функцию	
 					</p>
 					<div class="result2"></div>
-					<button name = "btn" class="btn" onclick = "exercise2()"> Show result 1 </button>
-					<button name = "btn" class="btn" onclick = "exercise21()"> Show result 2</button>
-				</div>
+					<div class="buttons">
+						<button name = "btn" class="btn" onclick = "exercise2()"> Show result 1 </button>
+						<button name = "btn" class="btn" onclick = "exercise21()"> Show result 2</button>
+					</div>
 				<div class="fourth, exercise">
 					<h3>Exercise 3</h3>
 					<p class = 'description'>Откройте Chrome DevTools <br>В панели навигации найдите файл index01.js ( в папке js/ ) <br> Установите breakpoint на строке вызова функции insertUserText ( строка 10 ) <br> Перезагрузите страницу <br> Теперь обратите внимание на функцию testUserText <br>Ваша задача: обезопасить свою страницу от внедрения вредоносного кода с помощью функции валидации testUserText <br> функция должна вывести на страницу текст пользователя безопасным способом <br> ( т.е. текст должен быть выведен "as is" ( как есть ), но код не должен быть выполнен )
@@ -101,6 +102,7 @@
 			</div>
 		</div>
 	</div>
+	<a href="#" class="arrow" id = "anchor"><img src="../images/arrow-up.png" alt="up"></a>
 	<script src = "../js/main.js"></script>
 </body>
 </html>

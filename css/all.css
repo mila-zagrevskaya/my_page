@@ -48,6 +48,16 @@ h1 {
 	font-size: 20px;
 	line-height: 31px;
 }
+.arrow img {
+	display: none;
+}
+.show img {
+	display: block;
+	width: 35px;
+	position: fixed;
+	bottom: 30px;
+	left: 60px;
+}
 h2 {
 	font-size: 20px;
 	line-height: 52px;
@@ -91,6 +101,7 @@ a {
 	padding: 0px;
 }
 .categories{
+	margin-top: 0;
 	padding: 20px 25px;
 }
 .contacts {
@@ -126,7 +137,7 @@ a {
 	top: 0;
 	left: 50%;
 	width: 200px;
-	background-color: var(--main-color);
+	background-color: #fff;
 	box-shadow: 0px 10px 45px -10px #3566a9
 }
 .nav .drop:hover .drop-wrap {
@@ -144,26 +155,27 @@ a {
 }
 .drop-hold li a {
 	padding: 5px;
-	color: #fff;
+	color: var(--main-color);
 	border: none;
 	text-align: center;
 	
 }
 .drop-hold li:hover {
-	background-color: #fff;
+	background-color: var(--main-color);
 	box-shadow: 0px 0px 10px -2px #3566a9;
 	transition: all 0.5s;
 }
 .drop-hold li:hover a{
-	color: var(--main-color);
+	color: #fff;
 }
 
 /*end dropbox*/
 /*start main block*/
 h3 {
-	margin-top: 55px;
-	padding: 5px;
-	border-top: 1px inset #ff0248;
+	width: 100%;
+	margin: 5px auto 0px;
+	padding: 5px 15px;
+	
 }
 .description {
 	margin: 15px 0;
@@ -175,6 +187,16 @@ h3 {
 	display: block;
 	margin: 20px auto;
 	width: 100%;
+}
+.exercise {
+	margin-top: 55px;
+	border-top: 1px inset #ff0248;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;	
 }
 .btn {
 	display: inline-block;
@@ -246,4 +268,18 @@ h3 {
 		left: 45%;
 		width: 60%;
 	}
+	.exercise {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.description {
+		padding: 0 35px;
+	}
+	.show img {
+		width: 20px;
+		left: 5px;
+	}
+
+
 }
