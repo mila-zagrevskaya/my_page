@@ -7,7 +7,11 @@ function exercise1 (event) {
 	for (var i = 0; i < newStr.length; i++){
 		letters.push((newStr[i].charAt(0)))
 	}
-
 	container.innerText = `${letters.join (" ")}`
 
 }
+
+
+//  function showCode(param1, param2){
+//     document.querySelector(param2).innerHTML = param1.toLocaleString()
+// }

@@ -1,5 +1,5 @@
 function userInfo (user) {
-        console.log ( this.registered == true ? 
+        document.querySelector('.result2') ( this.registered == true ? 
         	`Дата регистрации: ${this.data}` :
         	`Незарегистрированный пользователь: ${this.name}` )
 }
@@ -16,6 +16,7 @@ var secondUser = {
     data: new Date().toLocaleString (),
   	getInfo: userInfo 
 }
+
 
 firstUser.getInfo ()
 secondUser.getInfo ()

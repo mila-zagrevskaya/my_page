@@ -212,7 +212,7 @@ h3 {
 }
 .btn {
 	display: inline-block;
-	width: 200px;
+	width: 155px;
 	text-align: center;
 	margin: 15px 25px;
 	padding: 5px 10px;
@@ -222,22 +222,41 @@ h3 {
 	font-weight: bold;
 	border: 2px inset #ff0248;
 	background: none;
+	font-size: 16px;
 }
 .result1,
 .result2,
 .result3,
-.show-code {
+.show-code1,
+.show-code2,
+.show-code3  {
 	margin: 20px auto;
 	padding: 5px;
 	width: 100%;
-	min-height: 100px;
+	min-height: 75px;
 	border: 1px inset #ff0248;
 	background-color: var(--main-color);
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
 	z-index: 10;
 }
+/*.result1 p,
+.result2 p,
+.result3 p {
+	text-align: justify;
+
+}*/
+.show-code1,
+.show-code2,
+.show-code3 {
+	white-space: pre-wrap;
+	overflow: auto;
+	resize: none;
+	text-align: left;
+	padding: 15px 10px 15px 35px;
+}
+
 .third {
 	position: relative;
 }

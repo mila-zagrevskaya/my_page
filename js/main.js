@@ -28,3 +28,8 @@ function showArrow() {
 
 // ________
 
+// show code
+
+ function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}

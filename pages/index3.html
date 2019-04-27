@@ -10,12 +10,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="shortcut icon" href="../images/favicon.png">
-	<script src = "../js/main.js"></script>
-	<script src = "../js/index21.js"></script>
-	<script src = "../js/index22.js"></script>
+	
 </head>
-<body>
-	<div class="wrapper">
+<body onload = "showCode (sample, '.show-code1' ) , 
+showCode (userInfo, '.show-code2'), showCode (exercise3, '.show-code3')">	<div class="wrapper">
 		<div class="banner">
 			<div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
 			<h1>My page</h1>
@@ -76,34 +74,39 @@
 				<h2>homework 3</h2>
 				<div class="first, exercise">
 					<h3>Exercise 1</h3>
-					<p class = 'description'>
+					<p class = 'description'>Объявите функцию без формальных параметров, которая выводит в консоль сама себя и все переданные ей аргументы  <br> <br> Вызовите эту функцию с аргументами 10, false, "google"
 					</p>
-					<div class="result1"></div>
-					<button name = "btn" class="btn" onclick = "exercise1()"> Show result </button>
+					<div class="show-code1"></div>
+					<!-- <div class="result1"></div> -->
+					<button name = "btn" class="btn" onclick = "exercise1()"> Show result in console </button>
 				</div>
 
 				<div class="second, exercise">
 					<h3>Exercise 2</h3>
-					<p class = 'description'>	
+					<p class = 'description'>Объявите функцию userInfo, которая выводит в консоль: <br> 		свойство "Дата регистрации: " + свойство data контекста вызова, если свойство registered имеет значение true <br> сообщение "Незарегистрированный пользователь: " + свойство name в противном случае <br> ( используйте переменные в литералах ) <br> 	Создайте два объекта с одинаковым набором свойств: <br> <br> * name ( строка ) <br> 	* registered ( логическое значение ) <br> * data ( дата в формате "дд.мм.гг" ) <br><br> Добавьте каждому объекту метод getInfo, который будет ссылкой на функцию userInfo <br>Вызовите каждый метод
 					</p>
+					<div class="show-code2"></div>
 					<div class="result2"></div>
 					<div class="buttons">
 						<button name = "btn" class="btn" onclick = "exercise2()"> Show result 1 </button>
 						<button name = "btn" class="btn" onclick = "exercise21()"> Show result 2</button>
 					</div>
-				<div class="fourth, exercise">
+				<div class="third, exercise">
 					<h3>Exercise 3</h3>
-					<p class = 'description'>
+					<p class = 'description'>Откройте Chrome DevTools <br>В панели навигации найдите файл index01.js ( в папке js/ ) <br> Установите breakpoint на строке вызова функции insertUserText ( строка 10 ) <br> Перезагрузите страницу <br> Теперь обратите внимание на функцию testUserText <br>Ваша задача: обезопасить свою страницу от внедрения вредоносного кода с помощью функции валидации testUserText <br> функция должна вывести на страницу текст пользователя безопасным способом <br> ( т.е. текст должен быть выведен "as is" ( как есть ), но код не должен быть выполнен )
 					</p>
-					
-					<div class="result3"></div>
-					<button name = "btn" class="btn" onclick = "exercise3()"> Show result </button>
+					<img src="../images/xss-attack.png" alt="scheme" class = "screen">
+					<!-- <div class="result3"></div>
+					<button name = "btn" class="btn" onclick = "exercise3()"> Show result </button> -->
 				</div>
 			</div>
 		</div>
 	</div>
 	<a href="#" class="arrow"><img src="../images/arrow-up.png" alt="up"></a>
+
 	<script src = "../js/main.js"></script>
+	<script src = "../js/index31.js"></script>
+	<script src = "../js/index32.js"></script>
 </body>
 </html>
 
