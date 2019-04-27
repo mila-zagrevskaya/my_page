@@ -16,7 +16,6 @@ document.querySelector('.banner').addEventListener('click', function ( event ) {
 
 // _________
 
-
 // show / hide arrow
 window.onscroll = function(event) {showArrow()};
 
@@ -26,10 +25,3 @@ function showArrow() {
          document.getElementById("anchor").classList.remove("show")
 }
 
-// ________
-
-// show code
-
- function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}

@@ -16,3 +16,13 @@ collection.forEach(
 //     document.querySelector('.screen').classList.remove("big-pict")
      
 // })
+
+
+
+// ________
+
+// show code
+
+ function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}

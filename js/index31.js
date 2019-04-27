@@ -6,3 +6,6 @@ function sample () {
 function exercise1 (event) {
 	sample ( 10, false, "google" )
 }
+
+
+
