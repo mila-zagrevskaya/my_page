@@ -1,5 +1,6 @@
 function exercise1 (event) {
-	var container = document.querySelector(".result1").appendChild(document.createElement ("p"))
+	var container = document.querySelector(".result1").appendChild(
+		document.createElement ("p"))
 	
 	var letters = []
 	var str = "Backend As A Service"
@@ -11,7 +12,3 @@ function exercise1 (event) {
 
 }
 
-
-//  function showCode(param1, param2){
-//     document.querySelector(param2).innerHTML = param1.toLocaleString()
-// }

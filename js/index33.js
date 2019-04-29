@@ -44,7 +44,7 @@ function exercise3 (event) {
             91078455: {
                     postId: 7891451,
                     author: 41457,
-                    text: `HTML элемент <template> — это механизм для отложенного рендера клиентского контента, 
+                    text: `HTML элемент 'template' — это механизм для отложенного рендера клиентского контента, 
                             который не отображается во время загрузки, но может быть инициализирован при помощи JavaScript`
             },
             91078457: {
@@ -73,10 +73,5 @@ function exercise3 (event) {
             return res
     }
 
-     var container = document.querySelector(
-        ".result3").appendChild(document.createElement ("p"))
-
-         container.innerText = getCurrentPostComments ( 7891451 ) 
-         
-
+    console.log (getCurrentPostComments ( 7891451 ) )
 }

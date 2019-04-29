@@ -58,6 +58,7 @@ h1 {
 	bottom: 30px;
 	left: 60px;
 	transition: all 0.5s;
+	z-index: 99;
 }
 h2 {
 	font-size: 20px;
@@ -253,7 +254,7 @@ h3 {
 .show-code3 {
 	white-space: pre-wrap;
 	overflow: auto;
-	resize: none;
+	/*resize: none;*/
 	text-align: left;
 	padding: 15px 10px 15px 35px;
 }
