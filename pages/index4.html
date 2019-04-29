@@ -3,62 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My page</title>
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
 </head>
-<body>
-	<div class="wrapper">
+<body onload = "showCode (exercise, '.show-code1' ) , 
+showCode (exercise , '.show-code2'), showCode (exercise3, '.show-code3')">	<div class="wrapper">
 		<div class="banner">
-		<div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
-			<h1>Java Script</h1>
+			<div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
+			<h1>My page</h1>
 		</div>
 		<div class="content">
 			<div class="sidebar">
+				<h2 class="sidebar_top title">menu</h2>
 				<div class="panel">
-					<div class = "title">menu</div>
-					<div class="categories">
-						<ul class="nav">
-							<li class = "drop"><a href="#">Java Script <span class = "icon-angle-right"></span></a>
-								<div class="drop-wrap">
-									<ul class="drop-hold">
-										<li><a href="#">Homework 1</a></li>
-										<li><a href="#">Homework 2</a></li>
-										<li><a href="#">Homework 3</a></li>
-										<li><a href="#">Homework 4</a></li>
-										<li><a href="#">Homework 5</a></li>
-										<li><a href="#">Homework 6</a></li>
-										<li><a href="#">Homework 7</a></li>
-										<li><a href="#">Homework 8</a></li>
-										<li><a href="#">Homework 9</a></li>
-										<li><a href="#">Homework 10</a></li>
-										<li><a href="#">Homework 11</a></li>
-										<li><a href="#">Homework 12</a></li>
-										<li><a href="#">Homework 13</a></li>
-										<li><a href="#">Homework 14</a></li>
-										<li><a href="#">Homework 15</a></li>
-										<li><a href="#">Homework 16</a></li>
-										<li><a href="#">Homework 17</a></li>
-									</ul>
-								</div>
-							</li>
-							<li class = "drop"><a href="#">MarkUp <span class = "icon-angle-right"></span></a>
-								<div class="drop-wrap">
-									<ul class="drop-hold">
-										<li><a href="#">work 1</a></li>
-										<li><a href="#">work 2</a></li>
-										<li><a href="#">work 3</a></li>
-										<li><a href="#">work 4</a></li>
-										<li><a href="#">work 5</a></li>
-									</ul>
-								</div>		
-							</li>
-						</ul>
-					</div>
+					<ul class=" categories nav">
+						<li class = "drop"><a href="#">Java Script <span class = "icon-angle-right"></span></a>
+							<div class="drop-wrap">
+								<ul class="drop-hold">
+									<li><a href="index1.html">Homework 1</a></li>
+									<li><a href="index2.html">Homework 2</a></li>
+									<li><a href="index3.html">Homework 3</a></li>
+									<li><a href="index4.html">Homework 4</a></li>
+									<li><a href="index5.html">Homework 5</a></li>
+									<li><a href="index6.html">Homework 6</a></li>
+									<li><a href="index7.html">Homework 7</a></li>
+									<li><a href="index8.html">Homework 8</a></li>
+									<li><a href="index9.html">Homework 9</a></li>
+									<li><a href="#">Homework 10</a></li>
+									<li><a href="#">Homework 11</a></li>
+									<li><a href="#">Homework 12</a></li>
+									<li><a href="#">Homework 13</a></li>
+									<li><a href="#">Homework 14</a></li>
+									<li><a href="#">Homework 15</a></li>
+									<li><a href="#">Homework 16</a></li>
+									<li><a href="#">Homework 17</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class = "drop"><a href="#">MarkUp <span class = "icon-angle-right"></span></a>
+							<div class="drop-wrap">
+								<ul class="drop-hold">
+									<li><a href="#">work 1</a></li>
+									<li><a href="#">work 2</a></li>
+									<li><a href="#">work 3</a></li>
+									<li><a href="#">work 4</a></li>
+									<li><a href="#">work 5</a></li>
+								</ul>
+							</div>		
+						</li>
+					</ul>
 					<div class = "title">Contacts</div>
 					<div class="categories contacts">
 						<a href="#" ><span class = "icon-envelope-o"></span></a>
@@ -72,10 +70,77 @@
 				
 			</div>
 			<div class="main">
-				<h2>FEA-12 </h2>
-				
+				<h2>homework 4</h2>
+				<div class="first, exercise">
+					<h3>Exercise 1</h3>
+					<p class = 'description'>Создайте объект, свойства которого описывают содержимое дамской сумочки <br><br> Создайте метод объекта, позволяющий удалить что-то из сумочки <br> Создайте метод объекта, позволяющий положить что-то в сумочку
+					</p>
+					<div class="show-code1"></div>
+					<div class="result1"></div>
+					<button name = "btn" class="btn" onclick = "exercise11()">console.log (bag.content)</button>
+					<button name = "btn" class="btn" onclick = "exercise12()">bag.deleteFromBag ( 1 )</button>
+					<button name = "btn" class="btn" onclick = "exercise13()">bag.addInBag ( "кредитная карта" )</button>
+					<button name = "btn" class="btn" onclick = "exercise14()">bag.addInBag ( "парфюм" )</button>
+
+				</div>
+
+				<div class="second, exercise">
+					<h3>Exercise 2</h3>
+					<p class = 'description'>Объявить конструктор LibraryBook, с помощью которого можно создавать и редактировать объекты, хранящие информацию о книгах в библиотеке <br> <br>
+				📦 Приватные свойства объекта: <br> 
+				🔑 title ( название книги ), <br>
+				🔑 year ( год издания ), <br> 
+				🔑 author ( автор ), <br> 
+				🔑 readerName ( кому выдана ), <br>
+				🔑 readerData ( когда выдана ) <br> 
+				📦 Приватный метод <br>
+				🔑 giveTheBook ( client ):
+        внесение изменений в свойства: <br> 
+        	    🔑 readerName ( client ) <br> 
+        	    🔑 readerData ( текущая дата ) <br><br>
+        	    📋 Публичные методы: <br> 
+        	    📋 getBookInfo () - посмотреть информацию о наличии книги ( вывести в консоль readerData ) <br> 
+        	    📋 getTheBook ( client ) -  получить книгу:<br>
+        	    проверка, что книга не выдана на руки ( приватное свойство readerName должно быть пустой строкой ) если выдана - вернуть null <br> 
+        	    если не выдана, то вызвать приватный метод   giveTheBook ( client ) и вернуть bookTitle <br>
+        	    📋 returnBook () - вернуть книгу: <br> 
+        	    сбросить значения приватных свойств readerName, readerData <br><br> 
+        	    Создайте экземпляр книги <br> 
+        	    Запросите экземпляр от имени ... ( любое имя )
+					</p>
+					<div class="show-code2"></div>
+					<div class="result2"></div>
+					<div class="buttons">
+						<button name = "btn" class="btn" onclick = "exercise()"> firstUser.getInfo () </button>
+						<button name = "btn" class="btn" onclick = "exercise2()"> secondUser.getInfo ()</button>
+					</div>
+				<div class="third, exercise">
+					<h3>Exercise 3</h3>
+					<p class = 'description'>Объявите конструктор, который создает экземпляры с унаследованным методом addProperty <br>
+				Метод addProperty должен принимать два аргумента:<br><br>
+				имя свойства <br>
+				значение свойства <br><br>
+				и добавлять экземпляру новое свойство с указанным именем и значением
+					</p>
+					<!-- <img src="../images/usersposts.png" alt="users-posts" class = "screen"> -->
+					<div class="show-code3"></div>
+					<!-- <div class="result3"></div> -->
+					<button name = "btn" class="btn" onclick = "exercise3()"> Show result in console</button>
+				</div>
 			</div>
 		</div>
 	</div>
+	<a href="#" class="arrow" id = "anchor"><img src="../images/arrow-up.png" alt="up"></a>
+
+	<script src = "../js/main.js"></script>
+	<script src = "../js/pict.js"></script>
+	<script src = "../js/index41.js"></script>
+	<script src = "../js/index42.js"></script>
+	<script src = "../js/index43.js"></script>
 </body>
 </html>
+
+
+
+
+
