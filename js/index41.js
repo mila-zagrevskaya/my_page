@@ -21,12 +21,12 @@ function exercise () {
 
   var bag = {
     content: [ 
-    "паспорт",
-    "водительское удостоверение",
-    "телефон",
-    "ключи", 
-    "кошелек",
-    "помада" 
+    " паспорт",
+    " водительское удостоверение",
+    " телефон",
+    " ключи", 
+    " кошелек",
+    " помада" 
     ],
     addInBag: function ( name ) {
        this.content.push ( name )
@@ -50,12 +50,12 @@ function exercise12 (event) {
     container.textContent =  bag.content
 }  
 function exercise13 (event) {
-  bag.addInBag ( "кредитная карта" )
+  bag.addInBag ( " парфюм" )
     console.log ( bag.content )
     container.textContent =  bag.content
 }
 function exercise14 (event) {
-  bag.addInBag ( "парфюм" )
+  bag.addInBag ( " кредитная карта" )
     console.log ( bag.content )
     container.textContent =  bag.content
 }

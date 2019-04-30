@@ -1,3 +1,4 @@
+
 function LibraryBook ( title, year, author ) {
     this.bookTitle  = title || "книга"
     this.year = year || "нет данных"
@@ -37,14 +38,6 @@ var books = [];
     books.push (new LibraryBook ("Обломов", 1976, "И.А. Гончаров"));
     books.push (new LibraryBook ("Приключения Тома Сойера", 1981, "М. Твен"));
 
-
-books[4].getBookInfo ();
-books[4].getTheBook ("Mila Zagrevskaya", new Date (2019, 1, 25));
-books[4].getBookInfo ();
-books[4].returnTheBook ();
-books[4].getBookInfo ();
-
-
 // Узнать возраст книги
 LibraryBook.prototype.getAge = function() {
     var d = new Date().getFullYear();
@@ -53,6 +46,13 @@ LibraryBook.prototype.getAge = function() {
 
 
 
+
+
+books[4].getBookInfo ();
+books[4].getTheBook ("Mila Zagrevskaya", new Date (2019, 1, 25));
+books[4].getBookInfo ();
+books[4].returnTheBook ();
+books[4].getBookInfo ();
   
 console.log (books[4].getAge());
 console.log (books[2].getAge());

@@ -71,7 +71,7 @@ h2 {
 	margin: 0;
 }
 .main {
-	width: 65%;
+	width: 67%;
 	margin: 0px 5px;
 	padding: 0px 5px;
 }
@@ -208,14 +208,14 @@ h3 {
 .buttons {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;	
 }
 .btn {
 	display: inline-block;
 	min-width: 170px;
 	text-align: center;
-	margin: 15px 25px;
+	margin: 15px 10px;
 	padding: 5px 10px;
 	/*text-transform: uppercase;*/
 	text-decoration: none;
@@ -223,7 +223,7 @@ h3 {
 	font-weight: bold;
 	border: 2px inset #ff0248;
 	background: none;
-	font-size: 16px;
+	font-size: 14px;
 }
 .result1,
 .result2,
